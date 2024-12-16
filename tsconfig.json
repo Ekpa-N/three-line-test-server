@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES6",                                   /* Use ES6 for broader compatibility and modern features. */
+    "lib": ["ES6", "DOM"],                             /* Include browser DOM APIs and ES6 features. */
+
+    /* Modules */
+    "module": "CommonJS",                              /* CommonJS is suitable for Node.js projects. */
+    "moduleResolution": "node",                       /* Use Node.js resolution logic for module imports. */
+    "resolveJsonModule": true,                        /* Allow importing JSON files. */
+    "outDir": "./dist",                               /* Output directory for compiled JavaScript files. */
+    "rootDir": "./",                                  /* Specify the root directory of input files. */
+    "baseUrl": "./",                                  /* Base directory to resolve non-relative module names. */
+    "paths": {
+      "*": ["node_modules/*"]                         /* Ensure TypeScript resolves modules in `node_modules`. */
+    },
+
+    /* JavaScript Support */
+    "allowJs": true,                                  /* Allow JavaScript files in the project. */
+    "checkJs": false,                                 /* Disable error reporting in JavaScript files. */
+
+    /* Emit */
+    "declaration": true,                              /* Generate type declaration files for TypeScript files. */
+    "sourceMap": true,                                /* Create source map files for debugging. */
+    "removeComments": true,                           /* Remove comments from output files. */
+
+    /* Interop Constraints */
+    "esModuleInterop": true,                          /* Allow default imports from CommonJS modules. */
+    "allowSyntheticDefaultImports": true,             /* Same as `esModuleInterop` but for type compatibility. */
+    "forceConsistentCasingInFileNames": true,         /* Ensure imports respect case sensitivity. */
+
+    /* Type Checking */
+    "strict": true,                                   /* Enable all strict type-checking options. */
+    "skipLibCheck": true,                             /* Skip type checking of declaration files in `node_modules`. */
+
+    /* Completeness */
+    "noImplicitAny": true,                            /* Raise error on `any` type usage. */
+    "strictNullChecks": true,                         /* Make `null` and `undefined` values explicit. */
+    "noUnusedLocals": true,                           /* Report unused local variables. */
+    "noUnusedParameters": true,                       /* Report unused parameters in functions. */
+    "noImplicitReturns": true,                        /* Enforce explicit returns in functions. */
+    "noFallthroughCasesInSwitch": true                /* Prevent fallthrough in `switch` statements. */
+  },
+  "include": ["**/*.ts"],                             /* Include all files in the `src` directory. */
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]  /* Exclude `node_modules`, output, and test files. */
+}
